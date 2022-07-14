@@ -10,15 +10,21 @@
 </head>
 
 <body>
-    <img src="sunflower.jpg" alt="Подсолнух">
+    <img src="sunflower.jpg" alt="Подсолнух" height="200">
     <!-- image-link -->
     <a href="page.html">
-<img src="sunflower.jpg" alt="Sunflower">
-</a>
+    <img src="sunflower.jpg" alt="Sunflower" height="200">
+    </a>
     <header class="header">
         <h1 class="logo">
             <a href="#"><img src="logo.png" alt="Company LOGO"></a>
         </h1>
+        <h1 class="zuta">
+            Ukra<span class="plava">jina</span>
+        </h1>
+        <p>
+            Lorem ipsum dolor <em>sit amet consectetur</em> adipisicing elit.
+        </p>
     </header>
     <nav class="menu">
         <ul>
@@ -52,6 +58,88 @@
                 <p>How to manage time</p>
             </aside>
         </article>
+        <article>
+            <p>Liste</p>
+            <ul>
+                <li>Google Chrome</li>
+                <li>Microsoft Edge</li>
+                <li>Firefox</li>
+                <li>Opera</li>
+                <li>Internet Explorer</li>
+            </ul>
+            <p>Numerirana lista</p>
+            <ol>
+                <li>Google Chrome</li>
+                <li>Microsoft Edge</li>
+                <li>Firefox</li>
+                <li>Opera</li>
+                <li>Internet Explorer</li>
+            </ol>
+            <p>Numerirana lista rimski brojevi</p>
+            <ol type="i">
+                <li>Google Chrome</li>
+                <li>Microsoft Edge</li>
+                <li>Firefox</li>
+                <li>Opera</li>
+                <li>Internet Explorer</li>
+            </ol>
+            <p>Opisna lista</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hypertext Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheet</dd>
+            </dl>
+            <ol>
+                <li>Java</li>
+                <li>PHP</li>
+                <li value=5>CSS</li>
+                <li>JavaScript</li>
+                <li>Phyton</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Tablice</h2>
+            <h3>Jednostavna</h3>
+            <table>
+                <tr>
+                    <td>Gdansk - Berlin</td>
+                    <td>500 km</td>
+                </tr>
+                <tr>
+                    <td>Gdansk - Praha</td>
+                    <td>780 km</td>
+                </tr>
+            </table>
+            <h3>Kompleksna</h3>
+            <table> 
+                <caption>Distance between cities</caption>  
+                <tr> 
+                    <td rowspan="2">Starting point</td> 
+                    <td rowspan="2">End poind</td> 
+                    <td rowspan="2">Distance, km</td> 
+                    <td colspan="2">Travel time, h</td> 
+                </tr> 
+                <tr> 
+                    <td>by car</td> 
+                    <td>by train</td> 
+                </tr> 
+                <tr> 
+                    <td rowspan="2">Gdansk</td> 
+                    <td>Berlin</td> 
+                    <td>500</td> 
+                    <td>8</td> 
+                    <td>9</td> 
+                </tr> 
+                <tr> 
+                    <td>Praha</td> 
+                    <td>780</td> 
+                    <td>8</td> 
+                    <td>10</td> 
+                </tr> 
+            </table>
+            
+        </article>
     </main>
     <section>
         <h2>Title</h2>
@@ -67,6 +155,9 @@
         </nav>
         <p>Added
             <time datetime="2020-04-01 19:00">1 Апреля</time>
+        </p>
+        <p>
+            App &reg; — registered trademark of a commercial organization.
         </p>
     </footer>
 </body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forme</title>
+</head>
+
+<body>
+    <form accept-charset="utf-8 iso-8859-1" autocomplete="off" name="prva forma">
+        <h2>Elementi forme</h2>
+        <label for="user-name">Login</label>
+        <input type="text" id="user-name" name="user-name" minlength="1" maxlength="30" size="10">
+        <input type="number" id="sport-count" name="sport-count" step="0.1" value="3.0">
+        <input type="email" id="user-email" name="user-email">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="name-password" placeholder="8-Character Password">
+        <input type="colour" id='id-colour' name="colour" value="#FF00FF">
+        <input type="date" id="date-change " name="date">
+        <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+        <p><b>Leave your feedback</b></p>
+        <div>
+            <textarea name="feedback" id="feedback" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Cancel">
+        </div>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <p>
+                <label for="user-name">Name</label>
+                <input type="text" name="user-name" id="user-name">
+            </p>
+            <p>
+                <label for="phone-number">Phone</label>
+                <input type="tel" name="user-phone-number" id="phone-number">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Izbor naplate</legend>
+            <input type="radio" id="pay-master-card" name="pay">
+            <label for="pay-master-card">Master Card</label> <br>
+            <input type="radio" id="pay-visa" name="pay" checked>
+            <label for="pay-visa">Visa</label>
+        </fieldset>
+        <label for="clothes-size">Choose your size:</label>
+        <select name="clothes-size" id="clothes-size">
+            <option value="size-S">S</option>
+            <option value="size-M" selected>M</option>
+            <option value="size-L">L</option>
+            <option value="size-XL" disabled>XL</option>
+        </select>
+        <fieldset>
+            <legend>Lista predefiniranih opcija</legend>
+            <label for="city">Choose your city:</label>
+            <input list="city" class="form-control" placeholder="Kyiv" type="text">
+            <datalist id="city">
+                <option value="Kyiv"></option>
+                <option value="Kharkiv"></option>
+                <option value="Lviv"></option>
+                <option value="Dnipro"></option>
+                <option value="Vinnytsia"></option>
+            </datalist>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
